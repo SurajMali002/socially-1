@@ -96,13 +96,13 @@ firebase.auth().onAuthStateChanged(function(user) {
                 });
             } else {
                 document.getElementById('username').innerHTML = "user";
-                if(window.location.pathname != '/Socially/Logined/dashboard.html'){
+                if(window.location.pathname != '/socially/Logined/dashboard.html'){
                     document.getElementById('userdashproname').innerHTML = "user";
                 }
             }
         } else {
             document.getElementById('username').innerHTML = user;
-                if(window.location.pathname != '/Socially/Logined/dashboard.html'){
+                if(window.location.pathname != '/socially/Logined/dashboard.html'){
                     document.getElementById('userdashproname').innerHTML = user;
                 }
                 var user = firebase.auth().currentUser;
@@ -113,7 +113,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                         allprobvalue = doc.data().value;
                          localStorage.setItem("allproblemsvalue",allprobvalue);
                          if(allprobvalue != 0){
-                            if(window.location.pathname === '/Socially/Logined/dashboard.html'){
+                            if(window.location.pathname === '/socially/Logined/dashboard.html'){
                                 document.getElementById('nostatsnow').style.display = 'none';
                             }
                           }
@@ -131,7 +131,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                     if (doc.exists) {
                         pr1 = doc.data().value;
                         localStorage.setItem("societyproblemsnum",doc.data().value);
-                        if(window.location.pathname === '/Socially/Logined/dashboard.html'){
+                        if(window.location.pathname === '/socially/Logined/dashboard.html'){
                             document.getElementById('societyproblemsnumber').innerHTML =  doc.data().value
                         }
                        
@@ -139,7 +139,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                         // doc.data() will be undefined in this case
                         localStorage.setItem("societyproblemsnum",'0');
                       
-                        if(window.location.pathname === '/Socially/Logined/dashboard.html'){
+                        if(window.location.pathname === '/socially/Logined/dashboard.html'){
                             document.getElementById('societyproblemsnumber').innerHTML = '0';
                             pr1 = '0';
                         }
@@ -151,14 +151,14 @@ firebase.auth().onAuthStateChanged(function(user) {
                             pr2 = doc.data().value;
                         localStorage.setItem("illegalconstructionsnum",doc.data().value);
                         
-                        if(window.location.pathname === '/Socially/Logined/dashboard.html'){
+                        if(window.location.pathname === '/socially/Logined/dashboard.html'){
                             document.getElementById('illegalconstructionsnumber').innerHTML =  doc.data().value;
                             
                         }
                         } else {
                             // doc.data() will be undefined in this case
                             localStorage.setItem("illegalconstructionsnum",'0');
-                            if(window.location.pathname === '/Socially/Logined/dashboard.html'){
+                            if(window.location.pathname === '/socially/Logined/dashboard.html'){
                                 document.getElementById('illegalconstructionsnumber').innerHTML =  '0';
                                 pr2 = '0';
                             }
@@ -170,13 +170,13 @@ firebase.auth().onAuthStateChanged(function(user) {
                                 pr3 = doc.data().value;
                             localStorage.setItem("bullyingproblemsnum",doc.data().value);
                                 
-                                if(window.location.pathname === '/Socially/Logined/dashboard.html'){
+                                if(window.location.pathname === '/socially/Logined/dashboard.html'){
                                     document.getElementById('bullyingproblemsnumber').innerHTML =  doc.data().value;
                                 }
                             } else {
                                 // doc.data() will be undefined in this case
                                 localStorage.setItem("bullyingproblemsnum",'0');
-                                if(window.location.pathname === '/Socially/Logined/dashboard.html'){
+                                if(window.location.pathname === '/socially/Logined/dashboard.html'){
                                     document.getElementById('bullyingproblemsnumber').innerHTML =  '0';
                                     pr3 = '0';
                                 }
@@ -189,7 +189,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                                     pr4 = doc.data().value;
                                 localStorage.setItem("otherproblem",doc.data().value);
                                
-                                if(window.location.pathname === '/Socially/Logined/dashboard.html'){
+                                if(window.location.pathname === '/socially/Logined/dashboard.html'){
                                     document.getElementById('otherproblemsnumber').innerHTML =  doc.data().value;
                                     $(document).ready(function() {
                                         // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
@@ -200,7 +200,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                                 } else {
                                     // doc.data() will be undefined in this case
                                     localStorage.setItem("otherproblem",'0');
-                                    if(window.location.pathname === '/Socially/Logined/dashboard.html'){
+                                    if(window.location.pathname === '/socially/Logined/dashboard.html'){
                                         document.getElementById('otherproblemsnumber').innerHTML =  '0';
                                         pr4 = '0';
                                     }
@@ -211,7 +211,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                 })
         }
         if (firebase.auth().currentUser.photoURL != null) {
-            if(window.location.pathname != '/Socially/Logined/dashboard.html'){
+            if(window.location.pathname != '/socially/Logined/dashboard.html'){
             document.getElementById('imagedashproname').src = firebase.auth().currentUser.photoURL
             }
         } else {
@@ -232,7 +232,7 @@ firebase.auth().onAuthStateChanged(function(user) {
             }
 
         }
-        if(window.location.pathname != '/Socially/Logined/dashboard.html'){
+        if(window.location.pathname != '/socially/Logined/dashboard.html'){
             var user = firebase.auth().currentUser;
             document.getElementById('userinputemail').value = user.email;
             document.getElementById('userinputname').value = user.displayName;
