@@ -7,6 +7,8 @@ The UI is self designed and is user friendly the design is mobile responsive and
 ![socially dashboard](https://github.com/sanatg/socially/blob/main/applicationscreenshots/dashboard-desktop.png)
 
 ![socially dashboard](https://github.com/sanatg/socially/blob/main/applicationscreenshots/dashboard.png)
+
+![socially dashboard](https://github.com/sanatg/socially/blob/main/applicationscreenshots/dashboard-menu1-open.png)
 # Type of authentication
 1. Email,Password
 
