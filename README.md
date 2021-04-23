@@ -4,7 +4,7 @@ My name is Sanat Gupta and welcome to the The Socially Project(T.S.P),this proje
 # UI
 The UI is self designed and is user friendly the design is mobile responsive and fast.The base template was taken from creative tim's paper dashboard.
 
-![demo](https://i.ibb.co/q5F8qPY/Screenshot-2020-12-06-21-54-52.png)
+![demo](https://github.com/sanatg/socially/blob/main/applicationscreenshots/dashboard-desktop.png)
 
 # Type of authentication
 1. Email,Password
